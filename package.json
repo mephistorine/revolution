@@ -1,0 +1,37 @@
+{
+  "name": "revolution",
+  "version": "1.0.0",
+  "description": "Студия английского языка Revolution",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglifycss": "^1.0.6",
+    "gulp-uglyfly": "^1.4.2",
+    "smart-grid": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://stylesam@bitbucket.org/stylesam/revolution.git"
+  },
+  "keywords": [
+    "English",
+    "Education"
+  ],
+  "author": "stylesam",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/stylesam/revolution#readme"
+}
