@@ -1,0 +1,116 @@
+@import '_vars'
+@import '_smart-grid'
+@import '_media'
+@import '_input-styles'
+@import '//fonts.googleapis.com/css?family=Comfortaa|Monoton|Rock+Salt'
+@import "//webfonts.ru/import/komi.css";
+
+html, body
+	height 100%
+	width 100%
+
+body
+	margin 0
+	font-family Comfortaa
+
+input
+	display block
+	outline 0
+	border none
+
+.header
+	background url(../img/image-2.jpg) no-repeat
+	background-size cover
+	height 100%
+	color maincolor
+
+.logo-text
+	font-family Monoton
+	font-size 1.5em
+	color maincolor
+
+.top-menu,
+.top-bar,
+.header-content
+	display flex
+
+.top-menu
+	list-style none
+	&-item
+		color maincolor
+		margin 0 10px
+		text-decoration none
+		&:hover
+			color secondcolor
+
+.top-bar
+	justify-content space-between
+	//margin-top -5px
+	padding 8px
+	background rgba(0, 0, 0, .7)
+
+.header-content
+	justify-content space-between
+	align-items center
+	height 80%
+
+.header-title
+	max-width 20%
+	margin-left 5em
+
+.apply-form
+	h3
+		color secondcolor
+	margin-right 5em
+	input
+		color maincolor
+		margin 5px 0
+		padding-left 0
+		background transparent
+		&::placeholder
+			color maincolor
+	&-submit
+		font-size 1.1em
+		padding 10px
+		background transparent
+		color secondcolor
+		border 3px solid secondcolor
+		
+		transition color,border,background .2s linear
+	&-submit:hover
+		color maincolor
+		border 3px solid maincolor
+		background secondcolor
+
+.text
+	fill none
+	stroke-width 1
+	stroke-linejoin round
+	stroke-dasharray 70 330
+	stroke-dashoffset 0
+	animation stroke 6s infinite linear
+
+.text
+	&:nth-child(5n
+		& + 1)
+			stroke maincolor
+			animation-delay -1.2s
+		& + 2)
+			stroke #F5A503
+			animation-delay -2.4s
+		& + 3)
+			stroke secondcolor
+			animation-delay -3.6s
+		& + 4)
+			stroke #56D9CD
+			animation-delay -4.8s
+		& + 5)
+			stroke #D5E1DD
+			animation-delay -6s
+
+@keyframes stroke
+	100% 
+		stroke-dashoffset -400
+.logo-container
+	text-transform uppercase
+	font-size 2em

@@ -6,7 +6,48 @@ html(lang='ru')
 
 		link(rel='stylesheet', href='css/index.css')
 	body
-		.wrapper
-			header.header
-				.logo
-				.top-menu
+		header.header
+			.top-bar
+				.logo-container
+					svg(width='230', height='50')
+						symbol#s-text
+							text(x='0', y='70%') Revolution
+						
+						use.text(xlink:href='#s-text')
+						use.text(xlink:href='#s-text')
+						use.text(xlink:href='#s-text')
+						use.text(xlink:href='#s-text')
+						use.text(xlink:href='#s-text')
+
+				menu.top-menu
+					li: a.top-menu-item(href='#courses') Курсы английского языка
+					li: a.top-menu-item(href='#preschool') Дошкольное образование
+					li: a.top-menu-item(href='#abroad') Образование за рубежом
+					li: a.top-menu-item(href='#summer-camp') Летний языковой лагерь
+			.header-content
+				.header-title
+					h1 Добро пожаловать в студию английского языка Revolution
+				.apply-form
+					h3 Отправте нам заявку
+					form(name='apply-form', action='#')
+						.group
+							input.apply-form-name(
+								type='text',
+								name='name',
+								required
+							)
+							span.highlight
+							span.bar
+							label Имя
+						.group
+							input.apply-form-email(
+								type='email',
+								name='email',
+								pattern='/^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$/',
+								required
+							)
+							span.highlight
+							span.bar
+							label Email
+						button.apply-form-submit(type='submit') Отправить
+		section#courses

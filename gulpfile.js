@@ -27,6 +27,9 @@ var paths = {
 		src + 'stylus/**/*.styl',
 		'!' + src + 'stylus/**/_*.styl'
 	],
+	additionalCss: [
+		src + 'stylus/**/_*.styl'
+	],
 	js: [src + 'js/*.js'],
 	img: [src + 'img/*.*']
 };
@@ -64,10 +67,10 @@ gulp.task('styl', function(){
 		.pipe(autoprefixer({
 			 browsers: ['last 10 versions']
 		}))
-		.pipe(uglifycss({
-      "maxLineLen": 80,
-      "uglyComments": true
-    }))
+		// .pipe(uglifycss({
+		// "maxLineLen": 80,
+		// "uglyComments": true
+		// }))
 		//.pipe(csscomb())
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(dist +'css/'))
@@ -99,6 +102,7 @@ gulp.task('serve', ['pug', 'styl', 'imagemin'], function() {
 
 	gulp.watch(paths.html, ['pug']);
 	gulp.watch(paths.css, ['styl']);
+	gulp.watch(paths.additionalCss, ['styl']);
 	gulp.watch(paths.img, ['imagemin']);
 	//gulp.watch(paths.js, ['jsmin']);
 	gulp.watch([

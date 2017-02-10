@@ -1,0 +1,54 @@
+@import '_vars'
+.group
+	position relative
+	margin-bottom 2em
+
+input
+	font-size 18px
+	padding 0.625em  0.625em 0.625em 0.3125em
+	display block
+	width 18.75em
+	border none
+	border-bottom 1px solid secondcolor
+	
+	&:focus
+		outline none
+
+label
+	font-family 'Arial'
+	color secondcolor
+	font-size 18px
+	font-weight normal
+	position absolute
+	pointer-events none
+	left 0.3125em
+	top 0.625em
+	transition 0.2s ease all
+
+input:focus ~ label,
+input:valid ~ label
+	top -20px
+	left -2px
+	font-size 14px
+	color maincolor
+
+.bar
+	position relative
+	display block
+	&:before
+		left 50%
+	&:after
+		right 50%
+
+.bar::before, .bar::after
+	content ''
+	height 2px
+	width 0
+	bottom 1px
+	position absolute
+	background maincolor
+	transition 0.2s ease all
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after
+	width 50%
