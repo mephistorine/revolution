@@ -6,15 +6,12 @@ $(document).ready(function(){
 
 	var topBar = $('.top-bar');
 
-
+/*
 	window.onscroll = function() {
 		topBar.addClass('sticky');
 	}
 	if (window.pageYOffset == 0){topBar.removeClass('sticky');}
-
-	$('.english-levels').on('click', function(){
-
-	});
+*/
 
 	$('.trigger').on('click', function() {
 		$('.modal-wrapper').toggleClass('open');

@@ -28,6 +28,10 @@ img
 
 section
 	padding 2em 0
+	h2, h3
+		text-align center
+	p
+		text-align center
 
 .header
 	//background url(../img/image-2.jpg) no-repeat
@@ -45,7 +49,8 @@ section
 .header-content
 	display flex
 
-.courses-offers
+.courses-offers,
+.preschool-content
 	row-flex()
 
 .top-menu
@@ -62,11 +67,6 @@ section
 	//margin-top -5px
 	padding 8px
 	background rgba(0, 0, 0, .7)
-
-.sticky
-	position sticky
-	top 0
-	padding 0
 
 .header-content
 	justify-content space-between
@@ -130,6 +130,7 @@ section
 @keyframes stroke
 	100% 
 		stroke-dashoffset -400
+
 .logo-container
 	text-transform uppercase
 	font-size 2em
@@ -149,8 +150,6 @@ section
 	justify-content space-around
 	align-items stretch
 	margin-top 2em
-.courses
-	text-align center
 
 .english-levels
 	color maincolor
@@ -209,4 +208,22 @@ section
 
 .content
 	padding 5%
+
+.preschool-price-container
+	text-align center
+	col-lg-4()
+	col-md-6()
+	col-sm-12()
+	col-xs-12()
 	
+.preschool-content
+	justify-content center
+	
+.preschool-price,
+.courses-price
+	span
+		color maincolor
+
+.preschool
+	h3
+		margin-bottom 2em
