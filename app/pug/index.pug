@@ -2,8 +2,11 @@ doctype html
 html(lang='ru')
 	head
 		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
 		title Revolution Студия английского языка
 
+		//-link(rel='stylesheet', href='lib/tinglejs/tingle.min.css')
+		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
 		link(rel='stylesheet', href='css/index.css')
 	body
 		header.header
@@ -50,4 +53,71 @@ html(lang='ru')
 							span.bar
 							label Email
 						button.apply-form-submit(type='submit') Отправить
-		section#courses
+		section#courses.courses
+			h2 Все курсы английского
+			.courses-offers
+				.courses-price-container
+					.courses-price-image
+						img(src='img/library.png', alt='Все уровни англисйкого языка')
+					.courses-price
+						p Все уровни англисйкого языка
+						span От 2000 руб
+				.courses-price-container
+					.courses-price-image
+						img(src='img/test.png', alt='Подготовка к ЕГЭ и ОГЭ')
+					.courses-price
+						p Подготовка к ЕГЭ и ОГЭ
+						span От 2000 руб
+				.courses-price-container
+					.courses-price-image
+						img(src='img/handshake.png', alt='Бизнеc Английский')
+					.courses-price
+						p Бизнеc Английский
+						span От 2000 руб
+				.courses-price-container
+					.courses-price-image
+						img(src='img/earth-globe.png', alt='Английский для путешествий')
+					.courses-price
+						p Английский для путешествий
+						span От 2000 руб
+				.courses-price-container
+					.courses-price-image
+						img(src='img/notes.png', alt='Интенсив курс')
+					.courses-price
+						p Интенсив курс
+						span От 2000 руб
+				.courses-price-container
+					.courses-price-image
+						img(src='img/library.png', alt='Все уровни англисйкого языка')
+					.courses-price
+						p Все уровни англисйкого языка
+						span От 2000 руб
+			p Разумеется мы вернем деньги если за пол года не доведем ваш английский с нуля до <span class='btn trigger english-levels'>Pre-Int</span> !!!
+				
+			.modal-wrapper
+				.modal
+					.head
+						p.head-title Уровни владения Английским языком
+						a.btn-close.trigger(href='javascript: void(0)')
+							i.fa.fa-times(aria-hidden='true')
+					.content
+						ul
+							li A — Элементарное владение
+								ul
+									li A1 - Beginner, Elementary (Уровень выживания)
+									li: strong A2 - Pre-Intermediate (Предпороговый уровень)
+							li B — Самостоятельное владение
+								ul
+									li B1 - Intermediate (Пороговый уровень)
+									li B2 - Upper-Intermediate (Пороговый продвинутый уровень)
+							li C — Свободное владение
+								ul
+									li C1 - Advanced (Уровень профессионального владения)
+									li C2 - Proficiency (Владение на уровне носителя)
+		section#preschool.preschool
+			
+	script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+	script(src='lib/parallaxjs/parallax.min.js')
+	script(src='lib/onepageScrolljs/jquery.onepage-scroll.min.js')
+	//-script(src='lib/tinglejs/tingle.min.js')
+	script(src='js/common.js')

@@ -10,6 +10,9 @@ html, body
 	width 100%
 
 body
+	overflow-x hidden
+
+body
 	margin 0
 	font-family Comfortaa
 
@@ -18,8 +21,16 @@ input
 	outline 0
 	border none
 
+img
+	max-width 100%
+	height auto
+	min-height 200px
+
+section
+	padding 2em 0
+
 .header
-	background url(../img/image-2.jpg) no-repeat
+	//background url(../img/image-2.jpg) no-repeat
 	background-size cover
 	height 100%
 	color maincolor
@@ -33,6 +44,9 @@ input
 .top-bar,
 .header-content
 	display flex
+
+.courses-offers
+	row-flex()
 
 .top-menu
 	list-style none
@@ -48,6 +62,11 @@ input
 	//margin-top -5px
 	padding 8px
 	background rgba(0, 0, 0, .7)
+
+.sticky
+	position sticky
+	top 0
+	padding 0
 
 .header-content
 	justify-content space-between
@@ -114,3 +133,80 @@ input
 .logo-container
 	text-transform uppercase
 	font-size 2em
+
+.courses-price-container
+	col-lg-4()
+	col-md-4()
+	col-sm-6()
+	col-xs-12()
+	text-align center
+	margin-bottom 10px
+
+.courses-price-image
+	img
+		max-width 150px
+.courses-offers
+	justify-content space-around
+	align-items stretch
+	margin-top 2em
+.courses
+	text-align center
+
+.english-levels
+	color maincolor
+	cursor pointer
+
+
+
+.modal-wrapper
+	text-align left
+	width 100%
+	height 100%
+	position fixed
+	top 0
+	left 0
+	background rgba(41, 171, 164, 0.8)
+	visibility hidden
+	opacity 0
+	transition all 0.25s ease-in-out
+	&.open
+		opacity 1
+		visibility visible
+		.modal
+			margin-top -200px
+			opacity 1
+
+.modal
+	width 600px
+	height 400px
+	display block
+	margin 50% 0 0 -300px
+	position relative
+	top 50%
+	left 50%
+	background secondcolor
+	opacity 0
+	transition all 0.5s ease-in-out
+
+.head
+	width 90%
+	height 32px
+	padding 12px 30px
+	overflow hidden
+	background maincolor
+	text-align center
+	&-title
+		color secondcolor
+		margin-top 12px
+		margin-bottom 0
+		float left
+
+.btn-close
+	font-size 28px
+	display block
+	float right
+	color secondcolor
+
+.content
+	padding 5%
+	
