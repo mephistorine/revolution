@@ -2,6 +2,7 @@
 @import '_smart-grid'
 @import '_media'
 @import '_input-styles'
+//@import '../lib/onepageScrolljs/onepage-scroll.css'
 @import '//fonts.googleapis.com/css?family=Comfortaa|Monoton|Rock+Salt'
 @import "//webfonts.ru/import/komi.css";
 
@@ -30,8 +31,6 @@ section
 	padding 2em 0
 	h2, h3
 		text-align center
-	p
-		text-align center
 
 .header
 	//background url(../img/image-2.jpg) no-repeat
@@ -50,7 +49,9 @@ section
 	display flex
 
 .courses-offers,
-.preschool-content
+.preschool-content,
+.abroad-content,
+.footer
 	row-flex()
 
 .top-menu
@@ -146,15 +147,17 @@ section
 .courses-price-image
 	img
 		max-width 150px
+		
 .courses-offers
 	justify-content space-around
-	align-items stretch
 	margin-top 2em
 
 .english-levels
 	color maincolor
 	cursor pointer
 
+.courses-promise
+	text-align center
 
 
 .modal-wrapper
@@ -216,14 +219,62 @@ section
 	col-sm-12()
 	col-xs-12()
 	
-.preschool-content
+.preschool-content,
+.abroad-content
 	justify-content center
 	
 .preschool-price,
-.courses-price
+.courses-price,
+.abroad-price
 	span
 		color maincolor
 
 .preschool
+	background rgba(204, 204, 204, 0.17)
 	h3
 		margin-bottom 2em
+
+.abroad
+	.abroad-explanation
+		text-align center
+		padding 0 10em
+	img
+		max-width 200px
+
+.abroad-content
+	margin-top 3em
+
+.abroad-price-container
+	text-align center
+	col-lg-3()
+	col-md-3()
+	col-sm-6()
+	col-xs-12()
+
+.abroad-price-container,
+.preschool-price-container,
+.courses-price-container
+	margin-bottom 2em
+
+.summer-camp
+	padding 2em 5em
+	ul
+		line-height 1.5
+
+.footer
+	justify-content space-between
+	padding 1em 2em 0 2em
+	background rgba(204, 204, 204, 0.17)
+	a
+		transition color .2s linear
+		font-size 1.5em
+		color maincolor
+		&:hover
+			color #56D9CD
+.social-btns a
+	margin 0 10px
+		
+
+
+
+

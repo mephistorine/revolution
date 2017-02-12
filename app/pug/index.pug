@@ -7,9 +7,10 @@ html(lang='ru')
 
 		//-link(rel='stylesheet', href='lib/tinglejs/tingle.min.css')
 		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
+		link(rel='stylesheet', href='lib/aosjs/aos.css')
 		link(rel='stylesheet', href='css/index.css')
 	body
-		header.header
+		header.header#header
 			.top-bar
 				.logo-container
 					svg(width='230', height='50')
@@ -61,38 +62,38 @@ html(lang='ru')
 						img(src='img/library.png', alt='Все уровни англисйкого языка')
 					.courses-price
 						p Все уровни англисйкого языка
-						span От 2000 руб
+						span От 2000 &#8381;
 				.courses-price-container
 					.courses-price-image
 						img(src='img/test.png', alt='Подготовка к ЕГЭ и ОГЭ')
 					.courses-price
 						p Подготовка к ЕГЭ и ОГЭ
-						span От 2000 руб
+						span От 2000 &#8381;
 				.courses-price-container
 					.courses-price-image
 						img(src='img/handshake.png', alt='Бизнеc Английский')
 					.courses-price
 						p Бизнеc Английский
-						span От 2000 руб
+						span От 2000 &#8381;
 				.courses-price-container
 					.courses-price-image
 						img(src='img/earth-globe.png', alt='Английский для путешествий')
 					.courses-price
 						p Английский для путешествий
-						span От 2000 руб
+						span От 2000 &#8381;
 				.courses-price-container
 					.courses-price-image
 						img(src='img/notes.png', alt='Интенсив курс')
 					.courses-price
 						p Интенсив курс
-						span От 2000 руб
+						span От 2000 &#8381;
 				.courses-price-container
 					.courses-price-image
 						img(src='img/library.png', alt='Все уровни англисйкого языка')
 					.courses-price
 						p Все уровни англисйкого языка
-						span От 2000 руб
-			p.
+						span От 2000 &#8381;
+			p.courses-promise.
 				Разумеется мы вернем деньги если за пол года не доведем ваш английский с нуля до <span class='btn trigger english-levels'>Pre-Int</span> !!!
 				
 			.modal-wrapper
@@ -125,28 +126,76 @@ html(lang='ru')
 					.preschool-price
 						p Дошкольное образование
 						p Учим писать, читать, считать
-						span От 2800 руб
+						span От 2800 &#8381;
 
 				.preschool-price-container
 					.preschool-price-image
-						img(src='img/artist.png', alt='Все уровни англисйкого языка')
+						img(src='img/artist.png', alt='Творческая мастерская')
 					.preschool-price
 						p Творческая мастерская
 						p Лепка, рисование, театральный кружок
-						span От 2000 руб
+						span От 2000 &#8381;
 
 				.preschool-price-container
 					.preschool-price-image
-						img(src='img/homework.png', alt='Все уровни англисйкого языка')
+						img(src='img/homework.png', alt='Продленка')
 					.preschool-price
 						p Продленка
 						p Сделанное Домашнее задание
-						span От 150 руб / час
+						span От 150 &#8381; / час
 		
+		section#abroad.abroad
+			h2 Образование зарубежом
+			p.abroad-explanation Сотрудничаем с лучшими зарубежными школами. Поможем окунуться в языковую среду, преодолеть языковой барьер и получить море впечатлений
+			.abroad-content
+				.abroad-price-container
+					.abroad-price-image
+						img(src='img/united-states.png', alt='США')
+					.abroad-price
+						p США
+						span От 60 тыс. &#8381;
+				.abroad-price-container
+					.abroad-price-image
+						img(src='img/united-kingdom.png', alt='Великобритания')
+					.abroad-price
+						p Великобритания
+						span От 60 тыс. &#8381;
+				.abroad-price-container
+					.abroad-price-image
+						img(src='img/malta.png', alt='Мальта')
+					.abroad-price
+						p Мальта
+						span От 60 тыс. &#8381;
+				.abroad-price-container
+					.abroad-price-image
+						img(src='img/ireland.png', alt='Ирландия')
+					.abroad-price
+						p Ирландия
+						span От 60 тыс. &#8381;
 
+		section#summer-camp.summer-camp
+			h2 Летний языковой лагерь
+			p Студия английского языка Revolution набирает группу детей от 6 до 14 лет в летний языковой лагерь в Краснодаре.
+			p Наши предложения :
+			ul
+				li 3 часа английского каждый день
+				li Пребывание в лагере с 9.00 до 16.00
+				li Разнообразные мироприятия
+				li Погружение в языковую и культурную сферу Великобритании
+				li Питание
+		footer.footer
+			p Copyright &copy; 2017
+			a(href='#header'): i.fa.fa-arrow-up
+			.social-btns
+				a(href='#'): i.fa.fa-vk
+				a(href='#'): i.fa.fa-facebook
+				a(href='#'): i.fa.fa-instagram
 
+	//
+		<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 	script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
 	script(src='lib/parallaxjs/parallax.min.js')
 	script(src='lib/onepageScrolljs/jquery.onepage-scroll.min.js')
+	script(src='lib/aosjs/aos.js')
 	//-script(src='lib/tinglejs/tingle.min.js')
 	script(src='js/common.js')
