@@ -1,10 +1,8 @@
 $(document).ready(function(){
 
-	$('.header').parallax({
-		imageSrc: '../img/image-2.jpg'
-	});
-
-	var topBar = $('.top-bar');
+	var topBar = $('.top-bar'),
+			header = $('.header'),
+			viewportWidth = document.documentElement.clientWidth;
 
 /*
 	window.onscroll = function() {
@@ -32,4 +30,8 @@ $(document).ready(function(){
 				window.location.hash = target;
 		});
 	});
+
+	if( viewportWidth < 960 )
+		header.attr('data-image-src', 'img/bus-960.jpg')
+
 });

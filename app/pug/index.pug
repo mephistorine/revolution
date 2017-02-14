@@ -6,11 +6,11 @@ html(lang='ru')
 		title Revolution Студия английского языка
 
 		//-link(rel='stylesheet', href='lib/tinglejs/tingle.min.css')
-		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
+		link(rel='stylesheet', href='lib/fontawesome/css/font-awesome.min.css')
 		link(rel='stylesheet', href='lib/aosjs/aos.css')
 		link(rel='stylesheet', href='css/index.css')
 	body
-		header.header#header
+		header.header.parallax-window#header(data-parallax='scroll', data-image-src='img/bus.jpg')
 			.top-bar
 				.logo-container
 					svg(width='230', height='50')
@@ -22,7 +22,6 @@ html(lang='ru')
 						use.text(xlink:href='#s-text')
 						use.text(xlink:href='#s-text')
 						use.text(xlink:href='#s-text')
-
 				menu.top-menu
 					li: a.top-menu-item(href='#courses') Курсы английского языка
 					li: a.top-menu-item(href='#preschool') Дошкольное образование
@@ -61,7 +60,7 @@ html(lang='ru')
 					.courses-price-image
 						img(src='img/library.png', alt='Все уровни англисйкого языка')
 					.courses-price
-						p Все уровни англисйкого языка
+						p Все уровни английского языка
 						span От 2000 &#8381;
 				.courses-price-container
 					.courses-price-image
@@ -193,7 +192,8 @@ html(lang='ru')
 
 	//
 		<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-	script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+
+	script(src='lib/jqueryjs/jquery.js')
 	script(src='lib/parallaxjs/parallax.min.js')
 	script(src='lib/onepageScrolljs/jquery.onepage-scroll.min.js')
 	script(src='lib/aosjs/aos.js')
