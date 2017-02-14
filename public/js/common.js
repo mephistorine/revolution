@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 	var topBar = $('.top-bar'),
-			header = $('.header'),
-			viewportWidth = document.documentElement.clientWidth;
+			header = $('.header');
+			
 
 /*
 	window.onscroll = function() {
@@ -31,7 +31,5 @@ $(document).ready(function(){
 		});
 	});
 
-	if( viewportWidth < 960 )
-		header.attr('data-image-src', 'img/bus-960.jpg')
 
 });
