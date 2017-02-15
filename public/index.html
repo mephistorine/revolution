@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="lib/aosjs/aos.css">
     <link rel="stylesheet" href="css/index.css">
-    <script>
-      <var>vWidth = $(window).width();</var>
-      <header class="attr" data-image-src img/bus.jpg></header>
-    </script>
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <meta name="apple-mobile-web-app-title" content="Revolution">
     <meta name="application-name" content="Revolution">
@@ -64,7 +60,7 @@
               <label>Имя</label>
             </div>
             <div class="group">
-              <input class="apply-form-email" type="email" name="email" pattern="/^([a-z0-9_.-]+)@([a-z0-9_.-]+).([a-z.]{2,6})$/" required><span class="highlight"></span><span class="bar"></span>
+              <input class="apply-form-email" type="email" name="email" required><span class="highlight"></span><span class="bar"></span>
               <label>Email</label>
             </div>
             <button class="apply-form-submit" type="submit">Отправить</button>
@@ -216,7 +212,8 @@
       </ul>
     </section>
     <footer class="footer">
-      <p>Copyright &copy; 2017</p><a href="#header"><i class="fa fa-arrow-up"></i></a>
+      <p>Copyright &copy; 2017</p>
+      <div class="arrow-up"><a href="#header" title="Вернуться наверх"><i class="fa fa-arrow-up"></i></a></div>
       <div class="social-btns"><a href="#"><i class="fa fa-vk"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
     </footer>
   </body>

@@ -67,10 +67,10 @@ gulp.task('styl', function(){
 		.pipe(autoprefixer({
 			 browsers: ['last 10 versions']
 		}))
-		// .pipe(uglifycss({
-		// "maxLineLen": 80,
-		// "uglyComments": true
-		// }))
+		.pipe(uglifycss({
+			"maxLineLen": 80,
+			"uglyComments": true
+		}))
 		//.pipe(csscomb())
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(dist +'css/'))

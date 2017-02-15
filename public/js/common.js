@@ -31,5 +31,23 @@ $(document).ready(function(){
 		});
 	});
 
+	window.onscroll = function(){
+		$('.arrow-up').css('display', 'block');
+	}
+
+		
+
+/*
+	if ($(window).pageYOffset > 1000)
+	var vWidth = $(window).width();
+	if( vWidth <= 960 )
+		header.attr('data-image-src', 'img/bus-960.jpg')
+	else if (vWidth <= 780)
+		header.attr('data-image-src', 'img/bus-780.jpg')
+	else if (vWidth <= 560)
+		header.attr('data-image-src', 'img/bus-560.jpg')
+	else 
+		header.attr('data-image-src', 'img/bus.jpg')
+*/
 
 });
