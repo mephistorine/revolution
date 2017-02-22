@@ -4,16 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Revolution Студия английского языка</title>
+    <!-- Include styles of lib and fonts icons-->
     <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="lib/aosjs/aos.css">
+    <link rel="stylesheet" href="lib/iziModal/iziModal.min.css">
+    <!-- Include main styles file-->
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <meta name="apple-mobile-web-app-title" content="Revolution">
     <meta name="application-name" content="Revolution">
+    <!-- Color scheme of mobile Google Chrome-->
     <meta name="theme-color" content="#ff4b55">
+    <!-- Include manifest.json file-->
     <link rel="manifest" href="js/manifest.json">
+    <!-- Backgoround and sizes of tiles in MS Windows-->
     <meta name="msapplication-TileColor" content="#ff4b55">
     <meta name="msapplication-TileImage" content="favicons/mstile-150x150.png">
+    <!-- Include favicons for Retina MacOS and iOS-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#6441A4">
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
@@ -63,6 +69,10 @@
               <input class="apply-form-email" type="email" name="email" required><span class="highlight"></span><span class="bar"></span>
               <label>Email</label>
             </div>
+            <div class="group">
+              <input class="apply-form-phone" type="tel" name="phone" required><span class="highlight"></span><span class="bar"></span>
+              <label>Телефон</label>
+            </div>
             <button class="apply-form-submit" type="submit">Отправить</button>
           </form>
         </div>
@@ -72,73 +82,65 @@
       <h2>Все курсы английского</h2>
       <div class="courses-offers">
         <div class="courses-price-container">
-          <div class="courses-price-image"><img src="img/library.png" alt="Все уровни англисйкого языка"></div>
+          <div class="courses-price-image sprite library"></div>
           <div class="courses-price">
-            <p>Все уровни английского языка</p><span>От 2000 &#8381;</span>
+            <p>Все уровни английского языка</p><span>От 2000 руб</span>
           </div>
         </div>
         <div class="courses-price-container">
-          <div class="courses-price-image"><img src="img/test.png" alt="Подготовка к ЕГЭ и ОГЭ"></div>
+          <div class="courses-price-image sprite test"></div>
           <div class="courses-price">
-            <p>Подготовка к ЕГЭ и ОГЭ</p><span>От 2000 &#8381;</span>
+            <p>Подготовка к ЕГЭ и ОГЭ</p><span>От 2500 руб</span>
           </div>
         </div>
         <div class="courses-price-container">
-          <div class="courses-price-image"><img src="img/handshake.png" alt="Бизнеc Английский"></div>
+          <div class="courses-price-image sprite agreement"></div>
           <div class="courses-price">
-            <p>Бизнеc Английский</p><span>От 2000 &#8381;</span>
+            <p>Бизнеc Английский</p><span>От 2000 руб</span>
           </div>
         </div>
         <div class="courses-price-container">
-          <div class="courses-price-image"><img src="img/earth-globe.png" alt="Английский для путешествий"></div>
+          <div class="courses-price-image sprite earth-globe"></div>
           <div class="courses-price">
-            <p>Английский для путешествий</p><span>От 2000 &#8381;</span>
+            <p>Английский для путешествий</p><span>От 2000 руб</span>
           </div>
         </div>
         <div class="courses-price-container">
-          <div class="courses-price-image"><img src="img/notes.png" alt="Интенсив курс"></div>
+          <div class="courses-price-image sprite notes"></div>
           <div class="courses-price">
-            <p>Интенсив курс</p><span>От 2000 &#8381;</span>
+            <p>Интенсив курс</p><span>1000 руб</span>
           </div>
         </div>
         <div class="courses-price-container">
-          <div class="courses-price-image"><img src="img/library.png" alt="Все уровни англисйкого языка"></div>
+          <div class="courses-price-image sprite learning"></div>
           <div class="courses-price">
-            <p>Все уровни англисйкого языка</p><span>От 2000 &#8381;</span>
+            <p>Все уровни англисйкого языка</p><span>1000 руб</span>
           </div>
         </div>
       </div>
-      <p class="courses-promise">
-        Разумеется мы вернем деньги если за пол года не доведем ваш английский с нуля до <span class='btn trigger english-levels'>Pre-Int</span> !!!
-        
-      </p>
-      <div class="modal-wrapper">
-        <div class="modal">
-          <div class="head">
-            <p class="head-title">Уровни владения Английским языком</p><a class="btn-close trigger" href="javascript: void(0)"><i class="fa fa-times" aria-hidden="true"></i></a>
-          </div>
-          <div class="content">
-            <ul>
-              <li>A — Элементарное владение
-                <ul>
-                  <li>A1 - Beginner, Elementary (Уровень выживания)</li>
-                  <li><strong>A2 - Pre-Intermediate (Предпороговый уровень)</strong></li>
-                </ul>
-              </li>
-              <li>B — Самостоятельное владение
-                <ul>
-                  <li>B1 - Intermediate (Пороговый уровень)</li>
-                  <li>B2 - Upper-Intermediate (Пороговый продвинутый уровень)</li>
-                </ul>
-              </li>
-              <li>C — Свободное владение
-                <ul>
-                  <li>C1 - Advanced (Уровень профессионального владения)</li>
-                  <li>C2 - Proficiency (Владение на уровне носителя)</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+      <p class="courses-promise">Разумеется мы вернем деньги если за пол года не доведем ваш английский с нуля до <a class='trigger english-levels'>Pre-Int</a> !!!</p>
+      <div id="modal">
+        <div class="content">
+          <ul>
+            <li>A — Элементарное владение
+              <ul>
+                <li>A1 - Beginner, Elementary (Уровень выживания)</li>
+                <li><strong>A2 - Pre-Intermediate (Предпороговый уровень)</strong></li>
+              </ul>
+            </li>
+            <li>B — Самостоятельное владение
+              <ul>
+                <li>B1 - Intermediate (Пороговый уровень)</li>
+                <li>B2 - Upper-Intermediate (Пороговый продвинутый уровень)</li>
+              </ul>
+            </li>
+            <li>C — Свободное владение
+              <ul>
+                <li>C1 - Advanced (Уровень профессионального владения)</li>
+                <li>C2 - Proficiency (Владение на уровне носителя)</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -147,24 +149,24 @@
       <h3>Начните развивать своего малыша с нами!</h3>
       <div class="preschool-content">
         <div class="preschool-price-container">
-          <div class="preschool-price-image"><img src="img/abc.png" alt="Дошкольное образование"></div>
+          <div class="preschool-price-image sprite abc"></div>
           <div class="preschool-price">
             <p>Дошкольное образование</p>
-            <p>Учим писать, читать, считать</p><span>От 2800 &#8381;</span>
+            <p>Учим писать, читать, считать</p><span>От 2800 руб</span>
           </div>
         </div>
         <div class="preschool-price-container">
-          <div class="preschool-price-image"><img src="img/artist.png" alt="Творческая мастерская"></div>
+          <div class="preschool-price-image sprite artist"></div>
           <div class="preschool-price">
             <p>Творческая мастерская</p>
-            <p>Лепка, рисование, театральный кружок</p><span>От 2000 &#8381;</span>
+            <p>Лепка, рисование, театральный кружок</p><span>От 2000 руб</span>
           </div>
         </div>
         <div class="preschool-price-container">
-          <div class="preschool-price-image"><img src="img/homework.png" alt="Продленка"></div>
+          <div class="preschool-price-image sprite homework"></div>
           <div class="preschool-price">
             <p>Продленка</p>
-            <p>Сделанное Домашнее задание</p><span>От 150 &#8381; / час</span>
+            <p>Сделанное Домашнее задание</p><span>От 150 руб / час</span>
           </div>
         </div>
       </div>
@@ -174,27 +176,27 @@
       <p class="abroad-explanation">Сотрудничаем с лучшими зарубежными школами. Поможем окунуться в языковую среду, преодолеть языковой барьер и получить море впечатлений</p>
       <div class="abroad-content">
         <div class="abroad-price-container">
-          <div class="abroad-price-image"><img src="img/united-states.png" alt="США"></div>
+          <div class="abroad-price-image sprite united-states"></div>
           <div class="abroad-price">
-            <p>США</p><span>От 60 тыс. &#8381;</span>
+            <p>США</p><span>От 60 тыс. руб</span>
           </div>
         </div>
         <div class="abroad-price-container">
-          <div class="abroad-price-image"><img src="img/united-kingdom.png" alt="Великобритания"></div>
+          <div class="abroad-price-image sprite united-kingdom"></div>
           <div class="abroad-price">
-            <p>Великобритания</p><span>От 60 тыс. &#8381;</span>
+            <p>Великобритания</p><span>От 60 тыс. руб</span>
           </div>
         </div>
         <div class="abroad-price-container">
-          <div class="abroad-price-image"><img src="img/malta.png" alt="Мальта"></div>
+          <div class="abroad-price-image sprite malta"></div>
           <div class="abroad-price">
-            <p>Мальта</p><span>От 60 тыс. &#8381;</span>
+            <p>Мальта</p><span>От 60 тыс. руб</span>
           </div>
         </div>
         <div class="abroad-price-container">
-          <div class="abroad-price-image"><img src="img/ireland.png" alt="Ирландия"></div>
+          <div class="abroad-price-image sprite ireland"></div>
           <div class="abroad-price">
-            <p>Ирландия</p><span>От 60 тыс. &#8381;</span>
+            <p>Ирландия</p><span>От 60 тыс. руб</span>
           </div>
         </div>
       </div>
@@ -214,16 +216,21 @@
     <footer class="footer">
       <p>Copyright &copy; 2017</p>
       <div class="arrow-up"><a href="#header" title="Вернуться наверх"><i class="fa fa-arrow-up"></i></a></div>
-      <div class="social-btns"><a href="#"><i class="fa fa-vk"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
     </footer>
+    <!--
+    .social-btns
+    	a(href='#'): i.fa.fa-vk
+    	a(href='#'): i.fa.fa-facebook
+    	a(href='#'): i.fa.fa-instagram
+    
+    -->
   </body>
   <!--
   <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   
   -->
-  <script src="lib/jqueryjs/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="lib/parallaxjs/parallax.min.js"></script>
-  <script src="lib/onepageScrolljs/jquery.onepage-scroll.min.js"></script>
-  <script src="lib/aosjs/aos.js"></script>
+  <script src="lib/iziModal/iziModal.min.js"></script>
   <script src="js/common.js"></script>
 </html>

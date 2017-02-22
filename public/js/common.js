@@ -35,8 +35,6 @@ $(document).ready(function(){
 		$('.arrow-up').css('display', 'block');
 	}
 
-		
-
 /*
 	if ($(window).pageYOffset > 1000)
 	var vWidth = $(window).width();
@@ -49,5 +47,21 @@ $(document).ready(function(){
 	else 
 		header.attr('data-image-src', 'img/bus.jpg')
 */
+
+$('#modal').iziModal();
+
+
+$('.trigger').click(function (event) {
+	event.preventDefault();
+	$('#modal').iziModal('open');
+});
+
+$("#modal").iziModal({
+	overlayClose: true,
+	width: 600,
+	autoOpen: false,
+	overlayColor: 'rgba(0, 0, 0, 0.6)',
+});
+
 
 });

@@ -68,7 +68,7 @@ gulp.task('styl', function(){
 			 browsers: ['last 10 versions']
 		}))
 		.pipe(uglifycss({
-			"maxLineLen": 80,
+			"maxLineLen": 50000,
 			"uglyComments": true
 		}))
 		//.pipe(csscomb())

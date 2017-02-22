@@ -5,20 +5,29 @@ html(lang='ru')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		title Revolution Студия английского языка
 
-		//-link(rel='stylesheet', href='lib/tinglejs/tingle.min.css')
+		// Include styles of lib and fonts icons
 		link(rel='stylesheet', href='lib/fontawesome/css/font-awesome.min.css')
-		link(rel='stylesheet', href='lib/aosjs/aos.css')
+		link(rel='stylesheet', href='lib/iziModal/iziModal.min.css')
+
+		// Include main styles file
 		link(rel='stylesheet', href='css/index.css')
 		link(rel='icon', type='image/png', sizes='32x32', href='favicons/favicon-32x32.png')
+		
 
 		meta(name="apple-mobile-web-app-title", content="Revolution")
 		meta(name="application-name", content="Revolution")
+		
+		// Color scheme of mobile Google Chrome
 		meta(name="theme-color", content="#ff4b55")
-		link(rel='manifest', href='js/manifest.json')
 
+		// Include manifest.json file
+		link(rel='manifest', href='js/manifest.json')
+		
+		// Backgoround and sizes of tiles in MS Windows
 		meta(name='msapplication-TileColor', content='#ff4b55')
 		meta(name='msapplication-TileImage', content='favicons/mstile-150x150.png')
-
+		
+		// Include favicons for Retina MacOS and iOS
 		link(rel='apple-touch-icon', sizes='180x180', href='favicons/apple-touch-icon.png')
 		link(rel='mask-icon', href='favicons/safari-pinned-tab.svg', color='#6441A4')
 		each val in [57, 60, 72, 76, 114, 120, 144, 152, 180]
@@ -66,125 +75,115 @@ html(lang='ru')
 							span.highlight
 							span.bar
 							label Email
+						.group
+							input.apply-form-phone(
+								type='tel',
+								name='phone',
+								required
+							)
+							span.highlight
+							span.bar
+							label Телефон
 						button.apply-form-submit(type='submit') Отправить
 		section#courses.courses
 			h2 Все курсы английского
 			.courses-offers
 				.courses-price-container
-					.courses-price-image
-						img(src='img/library.png', alt='Все уровни англисйкого языка')
+					.courses-price-image.sprite.library
 					.courses-price
 						p Все уровни английского языка
-						span От 2000 &#8381;
+						span От 2000 руб
 				.courses-price-container
-					.courses-price-image
-						img(src='img/test.png', alt='Подготовка к ЕГЭ и ОГЭ')
+					.courses-price-image.sprite.test
 					.courses-price
 						p Подготовка к ЕГЭ и ОГЭ
-						span От 2000 &#8381;
+						span От 2500 руб
 				.courses-price-container
-					.courses-price-image
-						img(src='img/handshake.png', alt='Бизнеc Английский')
+					.courses-price-image.sprite.agreement
 					.courses-price
 						p Бизнеc Английский
-						span От 2000 &#8381;
+						span От 2000 руб
 				.courses-price-container
-					.courses-price-image
-						img(src='img/earth-globe.png', alt='Английский для путешествий')
+					.courses-price-image.sprite.earth-globe
 					.courses-price
 						p Английский для путешествий
-						span От 2000 &#8381;
+						span От 2000 руб
 				.courses-price-container
-					.courses-price-image
-						img(src='img/notes.png', alt='Интенсив курс')
+					.courses-price-image.sprite.notes
 					.courses-price
 						p Интенсив курс
-						span От 2000 &#8381;
+						span 1000 руб
 				.courses-price-container
-					.courses-price-image
-						img(src='img/library.png', alt='Все уровни англисйкого языка')
+					.courses-price-image.sprite.learning
 					.courses-price
 						p Все уровни англисйкого языка
-						span От 2000 &#8381;
+						span 1000 руб
 			p.courses-promise.
-				Разумеется мы вернем деньги если за пол года не доведем ваш английский с нуля до <span class='btn trigger english-levels'>Pre-Int</span> !!!
-				
-			.modal-wrapper
-				.modal
-					.head
-						p.head-title Уровни владения Английским языком
-						a.btn-close.trigger(href='javascript: void(0)')
-							i.fa.fa-times(aria-hidden='true')
-					.content
-						ul
-							li A — Элементарное владение
-								ul
-									li A1 - Beginner, Elementary (Уровень выживания)
-									li: strong A2 - Pre-Intermediate (Предпороговый уровень)
-							li B — Самостоятельное владение
-								ul
-									li B1 - Intermediate (Пороговый уровень)
-									li B2 - Upper-Intermediate (Пороговый продвинутый уровень)
-							li C — Свободное владение
-								ul
-									li C1 - Advanced (Уровень профессионального владения)
-									li C2 - Proficiency (Владение на уровне носителя)
+				Разумеется мы вернем деньги если за пол года не доведем ваш английский с нуля до <a class='trigger english-levels'>Pre-Int</a> !!!
+			#modal
+				.content
+					ul
+						li A — Элементарное владение
+							ul
+								li A1 - Beginner, Elementary (Уровень выживания)
+								li: strong A2 - Pre-Intermediate (Предпороговый уровень)
+						li B — Самостоятельное владение
+							ul
+								li B1 - Intermediate (Пороговый уровень)
+								li B2 - Upper-Intermediate (Пороговый продвинутый уровень)
+						li C — Свободное владение
+							ul
+								li C1 - Advanced (Уровень профессионального владения)
+								li C2 - Proficiency (Владение на уровне носителя)
 		section#preschool.preschool
 			h2 Дошкольное образование
 			h3 Начните развивать своего малыша с нами!
 			.preschool-content
 				.preschool-price-container
-					.preschool-price-image
-						img(src='img/abc.png', alt='Дошкольное образование')
+					.preschool-price-image.sprite.abc
 					.preschool-price
 						p Дошкольное образование
 						p Учим писать, читать, считать
-						span От 2800 &#8381;
+						span От 2800 руб
 
 				.preschool-price-container
-					.preschool-price-image
-						img(src='img/artist.png', alt='Творческая мастерская')
+					.preschool-price-image.sprite.artist
 					.preschool-price
 						p Творческая мастерская
 						p Лепка, рисование, театральный кружок
-						span От 2000 &#8381;
+						span От 2000 руб
 
 				.preschool-price-container
-					.preschool-price-image
-						img(src='img/homework.png', alt='Продленка')
+					.preschool-price-image.sprite.homework
 					.preschool-price
 						p Продленка
 						p Сделанное Домашнее задание
-						span От 150 &#8381; / час
+						span От 150 руб / час
 		
 		section#abroad.abroad
 			h2 Образование зарубежом
 			p.abroad-explanation Сотрудничаем с лучшими зарубежными школами. Поможем окунуться в языковую среду, преодолеть языковой барьер и получить море впечатлений
 			.abroad-content
 				.abroad-price-container
-					.abroad-price-image
-						img(src='img/united-states.png', alt='США')
+					.abroad-price-image.sprite.united-states
 					.abroad-price
 						p США
-						span От 60 тыс. &#8381;
+						span От 60 тыс. руб
 				.abroad-price-container
-					.abroad-price-image
-						img(src='img/united-kingdom.png', alt='Великобритания')
+					.abroad-price-image.sprite.united-kingdom
 					.abroad-price
 						p Великобритания
-						span От 60 тыс. &#8381;
+						span От 60 тыс. руб
 				.abroad-price-container
-					.abroad-price-image
-						img(src='img/malta.png', alt='Мальта')
+					.abroad-price-image.sprite.malta
 					.abroad-price
 						p Мальта
-						span От 60 тыс. &#8381;
+						span От 60 тыс. руб
 				.abroad-price-container
-					.abroad-price-image
-						img(src='img/ireland.png', alt='Ирландия')
+					.abroad-price-image.sprite.ireland
 					.abroad-price
 						p Ирландия
-						span От 60 тыс. &#8381;
+						span От 60 тыс. руб
 
 		section#summer-camp.summer-camp
 			h2 Летний языковой лагерь
@@ -200,6 +199,7 @@ html(lang='ru')
 			p Copyright &copy; 2017
 			.arrow-up
 				a(href='#header', title='Вернуться наверх'): i.fa.fa-arrow-up
+		//
 			.social-btns
 				a(href='#'): i.fa.fa-vk
 				a(href='#'): i.fa.fa-facebook
@@ -208,9 +208,7 @@ html(lang='ru')
 	//
 		<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
-	script(src='lib/jqueryjs/jquery.js')
+	script(src='https://code.jquery.com/jquery-2.2.4.min.js')
 	script(src='lib/parallaxjs/parallax.min.js')
-	script(src='lib/onepageScrolljs/jquery.onepage-scroll.min.js')
-	script(src='lib/aosjs/aos.js')
-	//-script(src='lib/tinglejs/tingle.min.js')
+	script(src='lib/iziModal/iziModal.min.js')
 	script(src='js/common.js')
